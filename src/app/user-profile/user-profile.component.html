@@ -12,11 +12,13 @@
           placeholder="First Name"
           required
           #firstName="ngModel" />
-        </mat-form-field>
+
         
         <mat-error *ngIf="firstName.errors?.required">
           First name is required
         </mat-error>
+
+      </mat-form-field>
   
         <mat-form-field>
           <input matInput 
