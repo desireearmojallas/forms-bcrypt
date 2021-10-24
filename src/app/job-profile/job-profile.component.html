@@ -12,7 +12,7 @@
               formControlName="companyName"
               name="companyName" 
               placeholder="Company Name" />
-            </mat-form-field>
+
     
             <mat-error *ngIf="companyName.errors?.required">
               Company name is required
@@ -22,13 +22,15 @@
               Company name should be at least 3 characters
             </mat-error>
     
+          </mat-form-field>
+
             <mat-form-field>
                 <input matInput 
                 type="text" 
                 formControlName="companyAddress"
                 name="companyAddress" 
                 placeholder="Company Address" />
-              </mat-form-field>
+
     
               <mat-error *ngIf="companyAddress.errors?.required">
                 Company address is required
@@ -37,6 +39,8 @@
               <mat-error *ngIf="companyAddress.errors?.minlength">
                 Company address should be at least 3 characters
               </mat-error>
+
+            </mat-form-field>
     
               <mat-form-field>
                 <input matInput 
@@ -44,7 +48,7 @@
                 formControlName="jobTitle"
                 name="jobTitle" 
                 placeholder="Job Title" />
-              </mat-form-field>
+
     
               <mat-error *ngIf="jobTitle.errors?.required">
                 Job title is required
@@ -54,13 +58,15 @@
                 Job title should be at least 3 characters
               </mat-error>
     
+            </mat-form-field>
+
               <mat-form-field>
                 <input matInput 
                 type="text" 
                 formControlName="salary"
                 name="salary" 
                 placeholder="Salary" />
-              </mat-form-field>
+
     
               <mat-error *ngIf="salary.errors?.required">
                 Salary is required
@@ -69,6 +75,8 @@
               <mat-error *ngIf="salary.errors?.minlength">
                 Salary should be at least 3 characters
               </mat-error>
+
+            </mat-form-field>
       
             <mat-form-field>
               <input matInput 
@@ -76,7 +84,7 @@
               formControlName="position"
               name="position" 
               placeholder="Position" />
-            </mat-form-field>
+
     
             <mat-error *ngIf="position.errors?.required">
               Position is required
@@ -85,6 +93,8 @@
             <mat-error *ngIf="position.errors?.minlength">
               Position should be at least 3 characters
             </mat-error>
+
+          </mat-form-field>
       
             <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="toggleDisplay2()">Submit</button>
           </form>

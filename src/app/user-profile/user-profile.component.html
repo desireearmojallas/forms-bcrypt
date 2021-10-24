@@ -26,11 +26,13 @@
           placeholder="Last Name"
           required
           #lastName="ngModel" />
-        </mat-form-field>
+
   
         <mat-error *ngIf="lastName.errors?.required">
           Last name is required
         </mat-error>
+
+      </mat-form-field>
   
         <mat-form-field>
           <input matInput 
@@ -41,7 +43,7 @@
           required
           minlength="11"
           #phoneNumber="ngModel" />
-        </mat-form-field>
+
   
         <mat-error *ngIf="phoneNumber.errors?.required">
           Phone number is required
@@ -50,6 +52,8 @@
         <mat-error *ngIf="phoneNumber.errors?.minlength">
           Phone number should contain 11 digits
         </mat-error>
+
+      </mat-form-field>
   
         <mat-form-field>
           <input matInput 
@@ -60,7 +64,7 @@
           required
           minlength="6"
           #username="ngModel" />
-        </mat-form-field>
+
   
         <mat-error *ngIf="username.errors?.required">
           Username is required
@@ -69,6 +73,8 @@
         <mat-error *ngIf="username.errors?.minlength">
           Username msut be at least 6 characters
         </mat-error>
+
+      </mat-form-field>
   
         <mat-form-field>
           <input matInput 
@@ -79,7 +85,7 @@
           required
           minlength="6"
           #password="ngModel" />
-        </mat-form-field>
+
   
         <mat-error *ngIf="password.errors?.required">
           Password is required
@@ -88,6 +94,8 @@
         <mat-error *ngIf="password.errors?.minlength">
           Password must be atleast 6 characters
         </mat-error>
+
+      </mat-form-field>
   
         <button mat-raised-button color="primary" [disabled]="!userProfile.valid" (click)="toggleDisplay()">Submit</button>
 
